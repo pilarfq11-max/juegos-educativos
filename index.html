@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Súper Matemáticas: Divisiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Mundo de Divisiones ➗</h1>
+        
+        <div class="mode-selector">
+            <button onclick="setMode('exacta')">Exactas</button>
+            <button onclick="setMode('divisor')">Hallar Divisor</button>
+            <button onclick="setMode('resto')">Calcular Resto</button>
+        </div>
+
+        <h2 id="mode-title">Modo: División Exacta</h2>
+
+        <div id="game-area">
+            <div id="question-text">
+                <span id="display-q">Cargando...</span>
+            </div>
+            <input type="number" id="user-input" placeholder="?">
+            <button id="check-btn">¡Enviar!</button>
+        </div>
+
+        <p id="feedback"></p>
+        <div class="stats">Puntos: <span id="score">0</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
